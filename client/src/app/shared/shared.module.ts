@@ -107,7 +107,8 @@ import { InputSwitchModule } from 'primeng/inputswitch'
 import { MyAccountVideoSettingsComponent } from '@app/+my-account/my-account-settings/my-account-video-settings'
 import { MyAccountInterfaceSettingsComponent } from '@app/+my-account/my-account-settings/my-account-interface'
 import { ActorAvatarInfoComponent } from '@app/+my-account/shared/actor-avatar-info.component'
-import { BatchDomainsValidatorsService } from '@app/+admin/config/shared/batch-domains-validators.service'
+import { BatchDomainsValidatorsService } from '@app/+admin/config/shared/batch-domains-validators.service';
+import { CounterComponent } from './misc/counter.component'
 
 @NgModule({
   imports: [
@@ -192,7 +193,8 @@ import { BatchDomainsValidatorsService } from '@app/+admin/config/shared/batch-d
 
     MyAccountVideoSettingsComponent,
     MyAccountInterfaceSettingsComponent,
-    ActorAvatarInfoComponent
+    ActorAvatarInfoComponent,
+    CounterComponent
   ],
 
   exports: [

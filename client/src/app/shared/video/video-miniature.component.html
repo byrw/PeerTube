@@ -20,7 +20,7 @@
 
         <span class="views">
           <ng-container *ngIf="displayOptions.date && displayOptions.views"> • </ng-container>
-          <ng-container i18n *ngIf="displayOptions.views">{video.views, plural, =1 {1 view} other {{{ video.views | myNumberFormatter }} views}}</ng-container>
+          <my-counter *ngIf="displayOptions.views" [value]="video.views" unit="view"></my-counter>
         </span>
       </span>
 
